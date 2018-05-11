@@ -3,9 +3,29 @@
   opacity: .8
 }
 
+.cardText{
+  margin: 5px;
+}
+.DefTitle{
+  margin: 35px;
+}
+.FormGroup{
+  margin-left: 15px;
+  border-color: black;
+  border: 9px;
+  padding: 2px;
+}
 
-
-
+#footer {
+  background-image:url("./1.jpg");
+  text-align: center;
+  margin:20px;
+  margin-top: 10px;
+/* padding-left:85px; */
+  height: 60px;
+  flex-shrink: 0;
+  width: 100%;
+}
 /* } 
  .CardBody{
  width: 100%;

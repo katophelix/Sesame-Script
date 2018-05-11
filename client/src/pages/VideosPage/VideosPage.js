@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from 'react-dom'
 import { Jumbotron, Container, Row, Col } from 'reactstrap';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
-import { Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input, FormText, Navbar } from 'reactstrap';
 
 import API from "../../utils/API";
 import "./Videos.css";
@@ -45,7 +45,7 @@ class VideosPage extends Component {
 
       <Container style={{width:"1200px", height:"100%"}}>
         <Row>
-          <Jumbotron className="jumbotron" style={{ width: "1200px", height: "100%" }}>
+          <Jumbotron className="jumbotron" style={{ width: "100%", height: "100%" }}>
             
             <h1>Sesame Script</h1>
              <h2>"Reality is a thing of the past."</h2>
@@ -61,7 +61,7 @@ class VideosPage extends Component {
 
             <Col size="md-3">
               <Card style={{width:"300px", height:"250px"}}>
-                <CardTitle className="CardTitle">
+                <CardTitle className="VideoTitle">
                   <strong>
                     <h3>{video.title}</h3>
                   </strong>
@@ -75,13 +75,6 @@ class VideosPage extends Component {
                 </CardBody>
                 <CardText className="CardText">
 
-               {/* <PreTag>
-    <CodeTag> */}
-                            
-                                {/* <SyntaxHighlighter language='javascript' style={rainbow}>{video.code}</SyntaxHighlighter>;  */}
-                                    
-                            {/* </CodeTag>
-                            </PreTag> */}
 
                 </CardText>
 
@@ -90,7 +83,17 @@ class VideosPage extends Component {
           ))}
 
         </Row>
-   
+        <Navbar id="footer">
+          <Col>
+            <h9>Seame Script</h9></Col>
+          <Col>
+            <h9>Kat Harris</h9>
+          </Col>
+          <Col>
+            <h9> 2018</h9>
+          </Col>
+
+        </Navbar>
       </Container>
     )
 

@@ -21,8 +21,8 @@ const videoSeed = [
     comments: [
       {name: "Bob",
       comment: "That's the best movie I have ever seen."},
-      {name: "Bobby",
-      comment: "That's the best thing I have ever seen."
+      {name: "Tim",
+      comment: "I was moved to tears."
     }
   
   ]
@@ -283,7 +283,7 @@ const videoSeed = [
     }]
   },
   {
-    title: "Imports and Exports in Node",
+    title: "Imports/Exports in Node",
     image: "https://placeimg.com/640/480/nature",
     link: "",
     code: [`Message.js

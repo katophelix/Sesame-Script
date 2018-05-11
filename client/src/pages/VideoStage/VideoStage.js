@@ -74,12 +74,12 @@ class VideoStage extends Component {
 
       <Container style={{ width: "1200px", height: "100%" }}>
         <Row>
-          <Jumbotron className="jumbotron" style={{ width: "1200px", height: "100%" }}>
+          <Jumbotron className="jumbotron" style={{ width: "100%", height: "100%" }}>
 
             <h1> {this.state.video.title}</h1>
 
             <h2>Starring </h2>
-             <h2> Kat Harris and Hannah Patellis. </h2>
+            <h2> Kat Harris and Hannah Patellis. </h2>
 
           </Jumbotron>
         </Row>
@@ -108,16 +108,16 @@ class VideoStage extends Component {
           </Col>
           <Col>
             <Card style={{ width: "325px", height: "100%" }}>
-              <CardTitle className="CardTitle">
+              {/* <CardTitle className="CardTitle">
                 <strong>
                   <h3>
                     Javascript
                   </h3>
                 </strong>
-              </CardTitle>
+              </CardTitle> */}
 
 
-              <CardTitle className="CardTitle">
+              <CardTitle className="DefTitle">
                 <strong>
                   <h3>
                     Definition
@@ -131,69 +131,87 @@ class VideoStage extends Component {
 
                   </h5>
                 </strong>
+                <hr />
+                <CardTitle className="DefTitle">
+                  <strong>
+                    <h3>
+                      Leave a comment or ask a Question.
+                  </h3>
+                  </strong>
+                </CardTitle>
+                <Form>
+                  <FormGroup>
+                    <Label for="Name">Name</Label>
+                    <Input value={this.state.name}
+                      onChange={this.handleInputChange}
+                      name="name"
+                      placeholder="Name (required)" />
+                  </FormGroup>
+
+                  <FormGroup>
+                    <Label for="comments">Comments</Label>
+                    <Input value={this.state.comment}
+                      onChange={this.handleInputChange}
+                      name="comment"
+                      placeholder="Leave a comment or ask a question!" />
+                  </FormGroup>
+                  <Button
+                    disabled={!(this.state.name)}
+                    onClick={this.handleFormSubmit} >
+                    Submit
+              </Button>
+                </Form>
+                <hr />
+                <CardTitle className="DefTitle">
+                  <strong>
+                    <h8>
+                      Comments.
+                  </h8>
+                  </strong>
+                </CardTitle>
+                {this.state.video.comments.map(comment => (
+                  <Row>
+
+                    <Form>
+                      <FormGroup className="FormGroup">
+
+                        <Label for="Name"><h8>{comment.name}</h8></Label>
+                        <FormText>
+                          <p>{comment.comment}</p>
+                        </FormText>
+                      </FormGroup>
+                    </Form>
+
+                  </Row>
+                ))}
+
 
               </CardBody>
 
+
             </Card>
-          </Col>
-        </Row>
-        <Row>
-          <Col md="6">
-            <Form>
-              <FormGroup>
-                <Label for="Name">Name</Label>
-                <Input value={this.state.name}
-                  onChange={this.handleInputChange}
-                  name="name"
-                  placeholder="Name (required)" />
-              </FormGroup>
 
-              <FormGroup>
-                <Label for="comments">Comments</Label>
-                <Input value={this.state.comment}
-                  onChange={this.handleInputChange}
-                  name="comment"
-                  placeholder="Leave a comment or ask a question!" />
-              </FormGroup>
-              <Button
-                disabled={!(this.state.name)}
-                onClick={this.handleFormSubmit} >
-                Submit
-              </Button>
-            </Form>
+            {/* </Row>
+        <Row> */}
+            <Col md="6">
+
+            </Col>
+
           </Col>
         </Row>
 
 
 
-        {this.state.video.comments.map(comment => (
-          <Row>
-            
-            <Form>
-              <FormGroup>
-              <FormText>
-                <h7>Comments, Questions and Requests.</h7>
-                </FormText>
-                <Label for="Name"><h8>{comment.name}</h8></Label>
-                <FormText>
-                <p>{comment.comment}</p>
-                </FormText>
-              </FormGroup>
-            </Form>
-            
-          </Row>
-        ))}
 
 
-
-        <Navbar>
+        <Navbar id="footer">
           <Col>
-            <h6>Seame Script</h6></Col>
+            <h9>Seame Script</h9></Col>
           <Col>
-            <h6>Kat Harris</h6>
+            <h9>Kat Harris</h9>
           </Col>
           <Col>
-            <h6> 2018</h6>
+            <h9> 2018</h9>
           </Col>
 
         </Navbar>
