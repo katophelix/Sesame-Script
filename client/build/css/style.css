@@ -1,8 +1,32 @@
 body{
-    background-color: rgb(20, 20, 3)
+    background-image:url(./6.jpg);
+    min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    
 }
 
+#root {
+  flex: 1;
+}
 
+html, body {
+  height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+#footer {
+  background-image:url("./1.jpg");
+  text-align: center;
+  margin:20px;
+  margin-top: 10px;
+/* padding-left:85px; */
+  height: 60px;
+  flex-shrink: 0;
+  width: 100%;
+}
 
 h1 {
     opacity: 1.5;
@@ -44,9 +68,14 @@ h1 {
      color: #6744e7 !important;
    }
 
-   h7 {
-    font-size: 25px !important;
+   h8 {
+    font-size: 17px !important;
      color: black !important;
+   }
+
+   h9 {
+    font-size: 17px !important;
+     color: yellow !important;
    }
    p {
        color: black;
