@@ -55,8 +55,16 @@ class VideoStage extends Component {
       [name]: value
     });
   };
-
-  // When the form is submitted, use the API.saveBook method to save the book data
+  clearForm = () => { 
+    // this.setState({inputVal: {}});
+    // this.setState({inputVal: ""});
+    // this.setState({value: {}});
+    // this.setState({value: ""});
+    // this.value.form.reset();
+    this.setState({name: '', comment: ""})
+    
+  }
+  // When the form is submitted, use the API.updateComments method to save the comment data
   // Then reload books from the database
   handleFormSubmit = event => {
     event.preventDefault();
@@ -66,6 +74,7 @@ class VideoStage extends Component {
         comment: this.state.comment
       })
         .then(res => this.loadVideo())
+        .then(res => this.clearForm())
         .catch(err => console.log(err));
     }
   };
