@@ -11,7 +11,7 @@ mongoose.connect(
 const videoSeed = [
   {
     title: "Passing Params",
-    image: "https://placeimg.com/640/480/any",
+    image:"./css/images/param.jpg", 
     link: "0W9uwklAR6s",
     code: [`functionName(parameter1, parameter2, parameter3) {
       code to be executed
@@ -30,7 +30,7 @@ const videoSeed = [
   },
   {
     title: "Functions",
-    image: "https://placeimg.com/640/480/any",
+    image: "./css/images/function.jpg",
     link: "https://www.youtube.com/watch?v=0W9uwklAR6s0W9uwklAR6s",
     code: [`function myFunction(p1, p2) {
       return p1 * p2;              // The function returns the product of p1 and p2
@@ -45,7 +45,7 @@ const videoSeed = [
   },
   {
     title: "Returns",
-    image: "https://placeimg.com/640/480/any",
+    image:"./css/images/return.jpg",
     link: "https://www.youtube.com/watch?v=0W9uwklAR6sCWvd1Oym-Hc",
     code: [`var x = myFunction(4, 3);    // Function is called, return value will end up in x
 
@@ -62,7 +62,7 @@ const videoSeed = [
   },
   {
     title: "If/Else",
-    image: "https://placeimg.com/640/480/animals",
+    image: "./css/images/if-else.jpg",
     link: "2g811Eo7K8U",
     code: [`if (condition) {
       block of code to be executed if the condition is true
@@ -79,8 +79,8 @@ const videoSeed = [
   },
   {
     title: "For Loop",
-    image: "https://placeimg.com/640/480/animals",
-    link: "2g811Eo7K8U",
+    image: "./css/images/for-loop.jpg",
+    link: "im7Vufrma1I",
     code: [`var text = "";
     
     for (var i = 0; i < 5; i++) {
@@ -96,7 +96,7 @@ const videoSeed = [
   },
   {
     title: "For Each Loop",
-    image: "https://placeimg.com/640/480/animals",
+    image: "./css/images/for-each.jpg",
     link: "2g811Eo7K8U",
     code: [`var sum = 0;
     var obj = {prop1: 5, prop2: 13, prop3: 8};
@@ -135,8 +135,8 @@ const videoSeed = [
   },
   {
     title: "Variables",
-    image: "https://placeimg.com/640/480/animals",
-    link: "2g811Eo7K8U",
+    image: "./css/images/var.jpg",
+    link: "6GXUMftJyJM",
     code: ["var = 1"],
     definition:
       "The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its value. ... Undeclared variables are always global",
@@ -148,7 +148,7 @@ const videoSeed = [
   },
   {
     title: "Object",
-    image: "https://placeimg.com/640/480/animals",
+    image: "./css/images/object.jpg",
     link: "2g811Eo7K8U",
     code: [`var person = {
       firstName:"John",
@@ -232,8 +232,8 @@ const videoSeed = [
   },
   {
     title: "Switch Case Statements",
-    image: "https://placeimg.com/640/480/nature",
-    link: "2g811Eo7K8U",
+    image: "./css/images/switch.jpg",
+    link: "aPoItrqPGzM",
     code: [`var day;
     switch (new Date().getDay()) {
         case 0:
@@ -269,7 +269,7 @@ const videoSeed = [
   },
   {
     title: "While Loops",
-    image: "https://placeimg.com/640/480/nature",
+    image: "./css/images/while.jpg",
     link: "",
     code: [`while (i < 10) {
       text += "The number is " + i;
@@ -311,7 +311,7 @@ const videoSeed = [
   },
   {
     title: "Ajax Calls",
-    image: "https://placeimg.com/640/480/nature",
+    image: "./css/images/ajax.jpg",
     link: "",
     code: [`$("button").click(function(){
       $.ajax({url: "demo_test.txt", success: function(result){

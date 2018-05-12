@@ -5,6 +5,7 @@ import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'react
 import { Form, FormGroup, Label, Input, FormText, Navbar } from 'reactstrap';
 import API from "../../utils/API";
 import "./Videos.css";
+// import image from "./function.jpg";
 import YouTube from 'react-youtube';
 import {BrowserRouter as Router, Link, Route, Switch,} from 'react-router-dom';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
