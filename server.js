@@ -22,7 +22,9 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/sesameScript");
-
+app.get("*", function(req, res) {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 // Start the API server
 app.listen(PORT, function() {
