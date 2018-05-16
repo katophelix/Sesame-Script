@@ -1,26 +1,25 @@
-# Create React Express App
 
-look at you tube videos
 
-facebook - passport - log in
+## Sesame Script 
 
-ok the comments
+## is a website that explains various Javascript functions, loops and terms. To help students understand Javascript, I decided to make a visual representation of some Javascript actions and terms. Coming from a background in Film and Theater I decided to act out  these functions. So I have filmed a visual representation of them. Visitors to the website can see the code, the definition and the "movie" of the function, as well as ask questions, make comments and request other things we could film.
 
-i'm not a robot
+Link to site 
+https://sesame-script.herokuapp.com/
 
-bootstrap 4
-flex box
-cards
 
-code syntax - in mongo
-code color
+![Sample Video](https://user-images.githubusercontent.com/32774089/40144542-01d37874-592d-11e8-9f2b-c808d6c843a5.gif)
 
-form for email? suggestions?
+## Overview
+This is a web application created using React. Click and image to see the video.
 
-click listener to open new video and add words on right hand side
+### Utilis
+* React
+* Bootstrap
+* Reactstrap
+* CSS
+* HTML
 
-function myFunction(x, y) {
-      if (y === undefined) {
-            y = 0;
-      } 
-  }
+
+
+![Screen Shot](client/public/css/images/scrsht.gif)
