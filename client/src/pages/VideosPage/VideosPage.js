@@ -45,7 +45,7 @@ class VideosPage extends Component {
         <Row>
           <Jumbotron className="jumbotron" style={{ width: "100%", height: "100%" }}>
             
-            <h1>Sesame Script</h1>
+            <h1>Sesame Script<h5>(A work in progress - we are still editing and shooting videos)</h5></h1>
              <h2>"Reality is a thing of the past."</h2>
            
             {/* <h4>Sesame Script is a website that explains various Javascript functions, loops and terms. 
