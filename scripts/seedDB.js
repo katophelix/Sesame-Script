@@ -10,9 +10,77 @@ mongoose.connect(
 
 const videoSeed = [
   {
+  title: "Variables",
+  image: "./css/images/var.jpg",
+  link: "https://www.youtube.com/watch?v=U9t6exMZQ5o",
+  code: ["var = 1"],
+  definition:
+    "The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its value. ... Undeclared variables are always global",
+  date: new Date(Date.now()),
+  comments: [{
+    name: "",
+    comment: ""
+  }]
+},
+{
+  title: "For Loop",
+  image: "./css/images/for-loop.jpg",
+  link: "https://www.youtube.com/watch?v=zTxZGNMaqUU",
+  code: [`var text = "";
+  
+  for (var i = 0; i < 5; i++) {
+      text += "The number is " + i + "<br>";
+  }`],
+  definition:
+    "The for statement creates a loop that is executed as long as a condition is true. The loop will continue to run as long as the condition is true. It will only stop when the condition becomes false. JavaScript supports different kinds of loops: for - loops through a block of code a number of times.",
+  date: new Date(Date.now()),
+  comments: [{
+    name: "",
+    comment: ""
+  }]
+},
+{
+  title: "Switch Case Statements",
+  image: "./css/images/switch.jpg",
+  link: "https://www.youtube.com/watch?v=d0Ghw0_GBCs",
+  code: [`var day;
+  switch (new Date().getDay()) {
+      case 0:
+          day = "Sunday";
+          break;
+      case 1:
+          day = "Monday";
+          break;
+      case 2:
+          day = "Tuesday";
+          break;
+      case 3:
+          day = "Wednesday";
+          break;
+      case 4:
+          day = "Thursday";
+          break;
+      case 5:
+          day = "Friday";
+          break;
+      case  6:
+          day = "Saturday";
+  }
+  "Today is " + day;
+  result= Tuesday`
+  ],
+  definition: "The switch statement executes a block of code depending on different cases. The switch statement is a part of JavaScript's 'Conditional' Statements, which are used to perform different actions based on different conditions. ... The switch statement is often used together with a break or a default keyword (or both).",
+  date: new Date(Date.now()),
+  comments: [{
+    name: "",
+    comment: ""
+  }]
+},
+
+  {
     title: "Passing Params",
     image:"./css/images/param.jpg", 
-    link: "0W9uwklAR6s",
+    link: "https://www.youtube.com/watch?v=60U8dsfwDcw",
     code: [`functionName(parameter1, parameter2, parameter3) {
       code to be executed
   }`],
@@ -31,7 +99,7 @@ const videoSeed = [
   {
     title: "Functions",
     image: "./css/images/function.jpg",
-    link: "https://www.youtube.com/watch?v=0W9uwklAR6s0W9uwklAR6s",
+    link: "https://www.youtube.com/watch?v=m4vKMmiHeww",
     code: [`function myFunction(p1, p2) {
       return p1 * p2;              // The function returns the product of p1 and p2
   }`],
@@ -46,7 +114,7 @@ const videoSeed = [
   {
     title: "Returns",
     image:"./css/images/return.jpg",
-    link: "https://www.youtube.com/watch?v=0W9uwklAR6sCWvd1Oym-Hc",
+    link: "https://www.youtube.com/watch?v=12pHgbPkb5g",
     code: [`var x = myFunction(4, 3);    // Function is called, return value will end up in x
 
     function myFunction(a, b) {
@@ -63,7 +131,7 @@ const videoSeed = [
   {
     title: "If/Else",
     image: "./css/images/if-else.jpg",
-    link: "2g811Eo7K8U",
+    link: "https://www.youtube.com/watch?v=wExyMe1OAp4",
     code: [`if (condition) {
       block of code to be executed if the condition is true
   } else { 
@@ -77,27 +145,11 @@ const videoSeed = [
       comment: ""
     }]
   },
+  
   {
-    title: "For Loop",
-    image: "./css/images/for-loop.jpg",
-    link: "im7Vufrma1I",
-    code: [`var text = "";
-    
-    for (var i = 0; i < 5; i++) {
-        text += "The number is " + i + "<br>";
-    }`],
-    definition:
-      "The for statement creates a loop that is executed as long as a condition is true. The loop will continue to run as long as the condition is true. It will only stop when the condition becomes false. JavaScript supports different kinds of loops: for - loops through a block of code a number of times.",
-    date: new Date(Date.now()),
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-  },
-  {
-    title: "For Each Loop",
+    title: "For Each Method/Loop",
     image: "./css/images/for-each.jpg",
-    link: "2g811Eo7K8U",
+    link: "https://www.youtube.com/watch?v=Ok24IFut_O4",
     code: [`var sum = 0;
     var obj = {prop1: 5, prop2: 13, prop3: 8};
     
@@ -114,42 +166,12 @@ const videoSeed = [
       comment: ""
     }]
   },
-  {
-    title: "Map (loop)",
-    image: "https://placeimg.com/640/480/animals",
-    link: "2g811Eo7K8U",
-    code: [`var array1 = [1, 4, 9, 16];
-
-    // pass a function to map
-    const map1 = array1.map(x => x * 2);
-    
-    console.log(map1);
-    // expected output: Array [2, 8, 18, 32]`],
-    definition:
-      "A Map object iterates its elements in insertion order — a for...of loop returns an array of [key, value] for each iteration. It should be noted that a Map which is a map of an object, especially a dictionary of dictionaries, will only map to the object's insertion order—which is random and not ordered",
-    date: new Date(Date.now()),
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-  },
-  {
-    title: "Variables",
-    image: "./css/images/var.jpg",
-    link: "6GXUMftJyJM",
-    code: ["var = 1"],
-    definition:
-      "The scope of a variable declared with var is its current execution context, which is either the enclosing function or, for variables declared outside any function, global. If you re-declare a JavaScript variable, it will not lose its value. ... Undeclared variables are always global",
-    date: new Date(Date.now()),
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-  },
+  
+  
   {
     title: "Object",
     image: "./css/images/object.jpg",
-    link: "2g811Eo7K8U",
+    link: "https://www.youtube.com/watch?v=Wq8SjHJb_Ug",
     code: [`var person = {
       firstName:"John",
       lastName:"Doe",
@@ -164,27 +186,16 @@ const videoSeed = [
       comment: ""
     }]
   },
+  
   {
-    title: "Array",
-    image: "https://placeimg.com/640/480/animals",
-    link: "2g811Eo7K8U",
-    code: [`var array_name = [item1, item2, item3, ...];  `],
+    title: "Strings and Numbers",
+    image: "./css/images/data-types.jpg",
+    link: "https://www.youtube.com/watch?v=DHjib4ngZd4",
+    code: [`var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";`[`var x = 3.14;    // A number with decimals
+    var y = 3;       // A number without decimals`],],
+    
     definition:
-      "The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects. Create an Array var fruits = ['Apple', 'Banana']; console. log(fruits. length); // 2. Access (index into) an Array item var first = fruits[0]; // Apple var last = fruits[fruits.",
-    date: new Date(Date.now()), user: "",
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-
-  },
-  {
-    title: "Strings",
-    image: "https://placeimg.com/640/480/nature",
-    link: "2g811Eo7K8U",
-    code: [`var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";`],
-    definition:
-      "A JavaScript string stores a series of characters like 'John Doe'. A string can be any text inside double or single quotes.",
+      "A JavaScript string stores a series of characters like 'John Doe'. A string can be any text inside double or single quotes. A Number can be any number including negatives and decimals.",
     date: new Date(Date.now()),
     comments: [{
       name: "",
@@ -192,12 +203,30 @@ const videoSeed = [
     }]
   },
   {
-    title: "Numbers",
-    image: "https://placeimg.com/640/480/nature",
-    link: "2g811Eo7K8U",
-    code: [`var x = 3.14;    // A number with decimals
-    var y = 3;       // A number without decimals`],
-    definition: "",
+    title: "Ajax Calls",
+    image: "./css/images/ajax.jpg",
+    link: "https://www.youtube.com/watch?v=E-jxg7Ef3j0",
+    code: [`$("button").click(function(){
+      $.ajax({url: "demo_test.txt", success: function(result){
+          $("#div1").html(result);
+      }});
+  });`],
+    definition: "AJAX = Asynchronous JavaScript And XML. AJAX is not a programming language. AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server) JavaScript and HTML DOM (to display or use the data)",
+    date: new Date(Date.now()),
+    comments: [{
+      name: "",
+      comment: ""
+    }]
+  },
+  {
+    title: "While Statement/Loop",
+    image: "./css/images/while.jpg",
+    link: "https://www.youtube.com/watch?v=4koykOPdI5w",
+    code: [`while (i < 10) {
+      text += "The number is " + i;
+      i++;
+  }`],
+    definition: "The while statement creates a loop that is executed while a specified condition is true. The loop will continue to run as long as the condition is true. It will only stop when the condition becomes false. JavaScript supports different kinds of loops: for - loops through a block of code a number of times.",
     date: new Date(Date.now()),
     comments: [{
       name: "",
@@ -206,7 +235,7 @@ const videoSeed = [
   },
   {
     title: "Constuctors",
-    image: "https://placeimg.com/640/480/nature",
+    image: "./css/images/video.jpg",
     link: "2g811Eo7K8U",
     code: [`// Constructor function for Person objects
     function Person(first, last, age, eye) {
@@ -230,61 +259,11 @@ const videoSeed = [
       comment: ""
     }]
   },
-  {
-    title: "Switch Case Statements",
-    image: "./css/images/switch.jpg",
-    link: "aPoItrqPGzM",
-    code: [`var day;
-    switch (new Date().getDay()) {
-        case 0:
-            day = "Sunday";
-            break;
-        case 1:
-            day = "Monday";
-            break;
-        case 2:
-            day = "Tuesday";
-            break;
-        case 3:
-            day = "Wednesday";
-            break;
-        case 4:
-            day = "Thursday";
-            break;
-        case 5:
-            day = "Friday";
-            break;
-        case  6:
-            day = "Saturday";
-    }
-    "Today is " + day;
-    result= Tuesday`
-    ],
-    definition: "The switch statement executes a block of code depending on different cases. The switch statement is a part of JavaScript's 'Conditional' Statements, which are used to perform different actions based on different conditions. ... The switch statement is often used together with a break or a default keyword (or both).",
-    date: new Date(Date.now()),
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-  },
-  {
-    title: "While Loops",
-    image: "./css/images/while.jpg",
-    link: "",
-    code: [`while (i < 10) {
-      text += "The number is " + i;
-      i++;
-  }`],
-    definition: "The while statement creates a loop that is executed while a specified condition is true. The loop will continue to run as long as the condition is true. It will only stop when the condition becomes false. JavaScript supports different kinds of loops: for - loops through a block of code a number of times.",
-    date: new Date(Date.now()),
-    comments: [{
-      name: "",
-      comment: ""
-    }]
-  },
+  
+ 
   {
     title: "Imports/Exports in Node",
-    image: "https://placeimg.com/640/480/nature",
+    image: "./css/images/video.jpg",
     link: "",
     code: [`Message.js
 
@@ -310,21 +289,39 @@ const videoSeed = [
     }]
   },
   {
-    title: "Ajax Calls",
-    image: "./css/images/ajax.jpg",
-    link: "",
-    code: [`$("button").click(function(){
-      $.ajax({url: "demo_test.txt", success: function(result){
-          $("#div1").html(result);
-      }});
-  });`],
-    definition: "AJAX = Asynchronous JavaScript And XML. AJAX is not a programming language. AJAX just uses a combination of: A browser built-in XMLHttpRequest object (to request data from a web server) JavaScript and HTML DOM (to display or use the data)",
+    title: "Map (loop)",
+    image: "./css/images/video.jpg",
+    link: "2g811Eo7K8U",
+    code: [`var array1 = [1, 4, 9, 16];
+
+    // pass a function to map
+    const map1 = array1.map(x => x * 2);
+    
+    console.log(map1);
+    // expected output: Array [2, 8, 18, 32]`],
+    definition:
+      "A Map object iterates its elements in insertion order — a for...of loop returns an array of [key, value] for each iteration. It should be noted that a Map which is a map of an object, especially a dictionary of dictionaries, will only map to the object's insertion order—which is random and not ordered",
     date: new Date(Date.now()),
     comments: [{
       name: "",
       comment: ""
     }]
-  }
+  },
+  {
+    title: "Array",
+    image: "./css/images/video.jpg",
+    link: "2g811Eo7K8U",
+    code: [`var array_name = [item1, item2, item3, ...];  `],
+    definition:
+      "The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects. Create an Array var fruits = ['Apple', 'Banana']; console. log(fruits. length); // 2. Access (index into) an Array item var first = fruits[0]; // Apple var last = fruits[fruits.",
+    date: new Date(Date.now()), user: "",
+    comments: [{
+      name: "",
+      comment: ""
+    }]
+
+  },
+  
 ];
 
 db.Video

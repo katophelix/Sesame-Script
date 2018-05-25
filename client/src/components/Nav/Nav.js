@@ -20,7 +20,7 @@ const Top = () => (
             <NavLink href="/" target="blank"><img style={{ width: "130px" }} src={logo3} alt="logo" /></NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://www.youtube.com/channel/UCDaoZ3jyhpSgV1_Zej6S-eg?view_as=subscriber" target="blank"><img style={{ width: "100px" }} src={logo2} alt="logo" /></NavLink>
+            <NavLink href="https://www.youtube.com/channel/UCrO9ZWdhs-jQrMg1b_eng1g?view_as=subscriber" target="blank"><img style={{ width: "100px" }} src={logo2} alt="logo" /></NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="https://www.facebook.com/katophelix" target="blank"><img className="img-responsive" style={{ width: "70px" }} src={logo} alt="logo" /></NavLink>

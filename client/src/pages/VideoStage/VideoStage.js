@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom'
 import { Container, Row, Col, Jumbotron } from 'reactstrap';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, CardFooter } from 'reactstrap';
 import { Form, FormGroup, Label, Input, FormText, Navbar } from 'reactstrap';
-
+import ReactPlayer from 'react-player'
 import Background from "./movie-background.jpg";
 import API from "../../utils/API";
 import "./VideosStage.css";
-import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
+
+ 
+
 import { BrowserRouter as Router, Link, Route, Switch, } from 'react-router-dom';
 import SyntaxHighlighter from 'react-syntax-highlighter/prism';
 import { tomorrow } from 'react-syntax-highlighter/styles/prism';
@@ -16,8 +19,9 @@ import { tomorrow } from 'react-syntax-highlighter/styles/prism';
 
 
 const opts = {
-  height: '550',
+  height: '650',
   width: '700',
+  
 
 };
 
@@ -65,7 +69,7 @@ class VideoStage extends Component {
     
   }
   // When the form is submitted, use the API.updateComments method to save the comment data
-  // Then reload books from the database
+  // Then reload video from the database
   handleFormSubmit = event => {
     event.preventDefault();
     if (this.state.name) {
@@ -107,11 +111,23 @@ class VideoStage extends Component {
 
               </CardText>
               <CardBody>
-                <YouTube
+              <ReactPlayer
+  url={this.state.video.link}
+  youtubeConfig={{ playerVars: { showinfo: 1 } } }
+  
+
+  facebookConfig={{ appId: '12345' }}
+  controls={true}
+  height={560}
+  controls={true}
+  opts={opts}
+  onReady={this._onReady}
+/>
+                {/* <YouTube
                   videoId={this.state.video.link}
                   opts={opts}
                   onReady={this._onReady}
-                />
+                /> */}
               </CardBody>
             </Card>
           </Col>
